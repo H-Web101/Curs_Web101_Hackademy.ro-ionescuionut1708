@@ -1,0 +1,128 @@
+body {
+	background-color: bisque;
+    text-align: center;
+}
+
+.head {
+	/* TODO - set the head color */
+	/* TODO - make the man's head like a circle */
+    width: 7vw;
+    height: 14vh;
+    background-color: blue;
+    border-radius: 50%;
+    display: inline-block;
+    /* TODO - put the head of the man in the middle of the page*/
+    transform: translateX(-30%) translateY(0%) rotate(0deg);   
+}
+
+.all_body {
+	width: 100%;
+	height: 15vh;
+	text-align: center;
+}
+
+.left_hand {
+    /* TODO - set the left hand color */
+    width: 2vw;
+    height: 15vh;
+    background-color: blue;
+    /* TODO - modify the display properties of the div */
+    /* TODO - set the relative position of the man's left hand to the man's body */
+    animation: animation_1 1s infinite;
+    /* TODO - set other properties of this animation */
+    display: inline-block;
+    position: relative;
+    top: 10%;
+    bottom: 50%;
+    left: 0%;
+    right: 20%;
+    transform-origin: top right;
+    transform: translateX(-449%) translateY(-99%) rotate(20deg);
+}
+
+.body {
+    /* TODO - set the man's body color */
+    /* TODO - set the width and the height of the man's body */
+    background-color: red;
+    height: 17em;
+    width: 8em;
+	display: inline-block;
+	position: relative;
+}
+
+.right_hand {
+    /* TODO - set the right hand color */
+    width: 2vw;
+    height: 15vh;
+    /* TODO - modify the display properties of the div */
+    /* TODO - set the relative position of the man's right hand to the man's body */
+    animation-name: animation_2;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    background-color: blue;
+    /* TODO - set other properties of this animation */
+    position: relative;
+    top: 10%;
+    bottom: 50%;
+    left: 20%;
+    right: 20%;
+    transform-origin: top left;
+    transform: translateX(-1050%) translateY(-99%) rotate(0deg);
+    display: inline-block;
+}
+
+.legs {
+    width: 100%;
+	height: 15vh;
+	text-align: center;
+}
+
+.left_leg {
+    /* TODO - set the left leg color */
+	/* TODO - modify the display properties of the div */
+    width: 2vw;
+    height: 15vh;
+	margin-right: 0.1vw;
+    background-color: blue;
+    display: inline-block;
+    position: relative;
+    top: 80%;
+    bottom: 10%;
+    left: 0%;
+    right: 20%;
+    transform: translateX(-100%) translateY(8.5%) rotate(0deg);
+}
+
+.right_leg {
+    /* TODO - set the left leg color */
+	/* TODO - modify the display properties of the div */
+    width: 2vw;
+    height: 15vh;
+	margin-left: 2.75vw;
+    background-color: blue;
+    display: inline-block;
+    position: relative;
+    top: 80%;
+    bottom: 10%;
+    left: 0%;
+    right: 20%;
+    transform: translateX(-120%) translateY(8.5%) rotate(0deg);
+}
+
+@keyframes animation_1 {
+    /* TODO - make an animation from 0% to 100% */
+    0% {
+         transform : translateX(-449%) translateY(-99%) rotate(20deg);
+       }
+
+    50% { 
+         transform : translateX(-449%) translateY(-99%) rotate(100deg);
+        }
+}
+
+@keyframes animation_2 {
+    /* TODO - make an animation with keywords "from" and "to" */
+    from { transform: translateX(-1050%) translateY(-99%) rotate(0deg);}
+    to { transform: translateX(-1050%) translateY(-99%) rotate(-50deg);}      
+}
